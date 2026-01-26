@@ -42,6 +42,7 @@ public:
   /*
     MyString &operator=(MyString rhs) {
       std::swap(data_, rhs.data_);
+      std::swap(size_, rhs.size_);
       std::cout << "cpy assignment \n";
       return *this;
     }
