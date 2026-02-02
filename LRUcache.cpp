@@ -24,6 +24,7 @@ public:
       if (++size_ > capacity_) {
         lru_map_.erase(lru_.begin()->key_);
         lru_.erase(lru_.begin());
+        --size_;
       }
     }
   }
